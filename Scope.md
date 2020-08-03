@@ -16,7 +16,7 @@ As a Covid 19 tracking measure, customers of 'Gastgewerbe' in Germany have to pr
 
 This is usually carried out with the help of preprinted forms (pen & paper).
 
-This application aims to catapult 'Gastgewerbe' into the information era. By replacing the analog acquisition and management of customer data with digital means, 'Gastgewerbe' managers can save time and money. At the same time, 'Gastgewerbe' customers can opt for a much more convenient way of poviding their information.
+This application aims to catapult 'Gastgewerbe' into the information era. By replacing the analog acquisition and management of customer data with digital means, 'Gastgewerbe' managers can save time and money. At the same time, 'Gastgewerbe' customers are going to have a more comfortable experience at the 'Gastgewerbe'.
 
 ### Scope Management
 
@@ -30,7 +30,7 @@ The Description should be a user story.
 
 ---
 
-These roles should be responsible for a bulk of the requirements. Feel free to add roles to this table.
+4 roles are a given: **Customer**, **Developer**, **Owner** and **User**. By no means is this list complete. New roles may be added at any time.
 
 | Role      | Description                                                                               |
 | --------- | ----------------------------------------------------------------------------------------- |
@@ -39,17 +39,17 @@ These roles should be responsible for a bulk of the requirements. Feel free to a
 | Owner     | Manager in charge of a 'Gastgewerbe'                                                      |
 | User      | User of the App, usually staff tasked with aquisition of customer data at a 'Gastgewerbe' |
 
-Similarly, requirements should usually be related to 1 of these domains. Feel free to edit and extend.
+Similarly, this list of domains is incomplete as well. However, assigning each requirement a domain is just a nice to have anyway.
 
-| Domain        | Description                                        |
-| ------------- | -------------------------------------------------- |
-| Security      | Everything related to protection of customer data  |
-| Functionality | Regarding the functionality of the app             |
-| Performance   | Regarding the performance of a given functionality |
+| Domain      | Description                                       |
+| ----------- | ------------------------------------------------- |
+| Security    | Everything related to protection of customer data |
+| Feature     | Regarding a feature the app should provide        |
+| Performance | Regarding the performance of a given Feature      |
 
 ---
 
-Requirements are to be identified, documented and updated continously.
+Requirements can be identified, documented and updated continously.
 
 ### Requirements Register
 
