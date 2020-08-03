@@ -53,6 +53,15 @@ Requirements can be identified, documented and updated continously.
 
 ### Requirements Register
 
-| ID  | Role     | Domain   | Importance | Description                                                                                                                                                    |
-| --- | -------- | -------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 01  | Customer | Security | High       | As customer, I want my personal information to stay undisclosed to everyone at all times, except to health authorities in case of a suspected case of Covid 19 |
+| ID  | Role     | Domain      | Importance | Description                                                                                                                                                                          |
+| --- | -------- | ----------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 01  | Customer | Security    | High       | As customer, use of the app guarantees that my personal information stays undisclosed to everyone at all times, except to health authorities in case of a suspected case of Covid 19 |
+| 02  | Customer |             | High       | As customer, I want convenient access to 'Gastgewerbe' services.                                                                                                                     |
+| 03  | Owner    | Feature     | High       | As owner, I want to aquire customer data to be able to operate my business.                                                                                                          |
+| 04  | Owner    | Feature     | High       | As owner, I want to store customer data to be able to operate my business.                                                                                                           |
+| 05  | Owner    | Feature     | High       | As owner, I want to export customer data to comply with health authority requests.                                                                                                   |
+| 06  | Owner    | Security    | High       | AS owner, I want to store customer data in a secure and protected manner, to comply with DSVGO                                                                                       |
+| 07  | Owner    | Performance | High       | As owner, I want to provide my customers a convenient way to submit their data, to increase customer satisfaction                                                                    |
+| 08  | User     | Feature     | Medium     | As user, I want to spend minimal effort on collecting customer data                                                                                                                  |
+| 09  | User     | Feature     | High       | As user, I do not want to be responsible for data security                                                                                                                           |
+| 10  | User     | Feature     | Medium     | As user, I want an easy to operate application to make my job easy                                                                                                                   |
