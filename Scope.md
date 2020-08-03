@@ -53,6 +53,12 @@ Requirements can be identified, documented and updated continously.
 
 ### Requirements Register
 
+Central requirement of the app is to perform 'Kontakterfassung':
+
+``` text
+(8)Die Kontaktnachverfolgbarkeit ist sicherzustellen, sofern dies in dieser Verordnung ausdrücklich bestimmt wird (Kontakterfassung). Kontaktdaten (Name, Vorname, Anschrift, Telefonnummer) sind in diesem Fall von dem Betreiber einer Einrichtung oder Veranlasser einer Ansammlung oder sonstigen Zusammenkunft unter Einhaltung der datenschutzrechtlichen Bestimmungen zu erheben und für eine Frist von einem Monat aufzubewahren; nach Ablauf der Aufbewahrungsfrist sind die Daten unverzüglich zu löschen. Sich aus anderen Rechtsvorschriften ergebende Datenaufbewahrungspflichten bleiben unberührt. Das zuständige Gesundheitsamt kann, soweit dies zur Erfüllung seiner nach den Bestimmungen des Infektionsschutzgesetzes (IfSG) und dieser Verordnung obliegenden Aufgaben erforderlich ist, Auskunft über die Kontaktdaten verlangen; die Daten sind unverzüglich zu übermitteln. Eine Verarbeitung der Daten zu anderen Zwecken ist nicht zulässig.
+```
+
 | ID  | Role     | Domain      | Importance | Description                                                                                                                                                                          |
 | --- | -------- | ----------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 01  | Customer | Security    | High       | As customer, use of the app guarantees that my personal information stays undisclosed to everyone at all times, except to health authorities in case of a suspected case of Covid 19 |
@@ -61,7 +67,8 @@ Requirements can be identified, documented and updated continously.
 | 04  | Owner    | Feature     | High       | As owner, I want to store customer data to be able to operate my business.                                                                                                           |
 | 05  | Owner    | Feature     | High       | As owner, I want to export customer data to comply with health authority requests.                                                                                                   |
 | 06  | Owner    | Security    | High       | AS owner, I want to store customer data in a secure and protected manner, to comply with DSVGO                                                                                       |
-| 07  | Owner    | Performance | High       | As owner, I want to provide my customers a convenient way to submit their data, to increase customer satisfaction                                                                    |
-| 08  | User     | Feature     | Medium     | As user, I want to spend minimal effort on collecting customer data                                                                                                                  |
-| 09  | User     | Feature     | High       | As user, I do not want to be responsible for data security                                                                                                                           |
-| 10  | User     | Feature     | Medium     | As user, I want an easy to operate application to make my job easy                                                                                                                   |
+| 07  | Owner    | Security    | High       | As owner, I want customer data to be deleted automatically one month after it was first recorded, to comply with regulations                                                         |
+| 08  | Owner    | Performance | High       | As owner, I want to provide my customers a convenient way to submit their data, to increase customer satisfaction                                                                    |
+| 09  | User     | Feature     | Medium     | As user, I want to spend minimal effort on collecting customer data                                                                                                                  |
+| 10  | User     | Feature     | High       | As user, I do not want to be responsible for data security                                                                                                                           |
+| 11  | User     | Feature     | Medium     | As user, I want an easy to operate application to make my job easy                                                                                                                   |
