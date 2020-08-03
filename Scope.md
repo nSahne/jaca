@@ -62,19 +62,20 @@ Central requirement of the app is to perform 'Kontakterfassung':
 
 #### By RoleRole
 
-| ID  | Role     | Domain      | Importance | Description                                                                                                                                                                          |
-| --- | -------- | ----------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 01  | Customer | Security    | High       | As customer, use of the app guarantees that my personal information stays undisclosed to everyone at all times, except to health authorities in case of a suspected case of Covid 19 |
-| 02  | Customer |             | High       | As customer, I want convenient access to 'Gastgewerbe' services.                                                                                                                     |
-| 03  | Owner    | Feature     | High       | As owner, I want to aquire customer data to be able to operate my business.                                                                                                          |
-| 04  | Owner    | Feature     | High       | As owner, I want to store customer data to be able to operate my business.                                                                                                           |
-| 05  | Owner    | Feature     | High       | As owner, I want to export customer data to comply with health authority requests.                                                                                                   |
-| 06  | Owner    | Security    | High       | AS owner, I want to store customer data in a secure and protected manner, to comply with DSVGO                                                                                       |
-| 07  | Owner    | Security    | High       | As owner, I want customer data to be deleted automatically one month after it was first recorded, to comply with regulations                                                         |
-| 08  | Owner    | Performance | High       | As owner, I want to provide my customers a convenient way to submit their data, to increase customer satisfaction                                                                    |
-| 09  | User     | Feature     | Medium     | As user, I want to spend minimal effort on collecting customer data                                                                                                                  |
-| 10  | User     | Feature     | High       | As user, I do not want to be responsible for data security                                                                                                                           |
-| 11  | User     | Feature     | Medium     | As user, I want an easy to operate application to make my job easy                                                                                                                   |
+| ID  | Role       | Domain      | Importance | Description                                                                                                                                                                                                      |
+| --- | ---------- | ----------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01  | Customer   | Security    | High       | As customer, use of the app guarantees that my personal information stays undisclosed to everyone at all times, except to health authorities in case of a suspected case of Covid 19                             |
+| 02  | Customer   |             | High       | As customer, I want convenient access to 'Gastgewerbe' services.                                                                                                                                                 |
+| 03  | Owner      | Feature     | High       | As owner, I want to aquire customer data to be able to operate my business.                                                                                                                                      |
+| 04  | Owner      | Feature     | High       | As owner, I want to store customer data to be able to operate my business.                                                                                                                                       |
+| 05  | Owner      | Feature     | High       | As owner, I want to export customer data to comply with health authority requests.                                                                                                                               |
+| 06  | Owner      | Security    | High       | AS owner, I want to store customer data in a secure and protected manner, to comply with DSVGO                                                                                                                   |
+| 07  | Owner      | Security    | High       | As owner, I want customer data to be deleted automatically one month after it was first recorded, to comply with regulations                                                                                     |
+| 08  | Owner      | Performance | High       | As owner, I want to provide my customers a convenient way to submit their data, to increase customer satisfaction                                                                                                |
+| 09  | User       | Feature     | Medium     | As user, I want to spend minimal effort on collecting customer data                                                                                                                                              |
+| 10  | User       | Feature     | High       | As user, I do not want to be responsible for data security                                                                                                                                                       |
+| 11  | User       | Feature     | Medium     | As user, I want an easy to operate application to make my job easy                                                                                                                                               |
+| 12  | Government | Feature     | Medium     | As government, we want to limit exposure of all people to the coronavirus to contain the spread of Covid 19. E.g. we would like to prevent different people from using the same shared pen or any other surfaces |
 
 #### By Technicalities
 
