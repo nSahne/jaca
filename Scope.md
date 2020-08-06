@@ -8,6 +8,7 @@
   - [By RoleRole](#by-rolerole)
   - [By Technicalities](#by-technicalities)
     - [UI](#ui)
+- [System Requirements](#system-requirements)
 
 ### Business Case
 
@@ -83,3 +84,79 @@ Central requirement of the app is to perform 'Kontakterfassung':
 
 - record customer data page
 - export customer data page
+
+## System Requirements
+
+&nbsp;
+
+#### 1. Non-Functional Requirements
+
+##### 1.1 Product Requirements
+
+&nbsp;
+
+| NFID | Priority| Description |
+| --- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------|
+| 01 | High | The application should be able to run on all modern iOS and Android devices |
+| 02 | Medium | All text should be available both in German and English |
+| 03 | High | All customer data will be stored on a SQL Server installed on a Raspberry Pi (or similar device) situated in a secure location within the business premises |
+
+##### 1.2 Security Requirements
+
+&nbsp;
+
+| NFID | Priority| Description |
+| --- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------|
+| 04 | High | All encryption should be done via RSA or similar assymetric encryption algorithm |
+| 05 | High | Once the customer data is transferred to the employee device, it should be immediately and automatically encrypted using the public key of the server device |
+| 06 | High | Customer data is only then decrypted with the server device's private key when a health authority has requested an export of customer data regarding a suspected case of CoVID-19 |
+| 07 | High | All customer data will be automatically deleted after a period of 30 days in accordance with government regulations |
+
+&nbsp;
+
+#### 2. Functional Requirements
+##### 2.1 Requirements for the Customer
+
+&nbsp;
+
+| FID | Priority| Description |
+| --- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------|
+| 01 | High | A tab called "Customer" should exist on the start page of the application where the user can click in order to be directed to the Customer view of the application |
+| 02 | High | A form field should exist on the Customer page to input the following customer information: last name, first name, address, telephone numer and optionally an email address |
+| 03 | High | A button should exist at the bottom of the form field where the customer can press to generate a QR code from the provided information |
+| 04 | High | Upon generation of the QR code referenced in FID 03, the application opens a new window with the generated QR code in which the QR code can then be scanned |
+| 05 | Medium | The customer should have the option to save the QR code for future use by clicking on a Save button on the generated page which contains the QR code, upon clicking the Save button a popup window should appear that contains a form field in which the customer specifies what the QR code should be called |
+| 06 | Medium | Saved QR codes should be accessed by a tab on the App Bar called QR Codes |
+| 07 | Medium | The QR codes page should contain a list view of all saved QR codes referenced by their saved name |
+| 08 | Medium | Upon clicking on the name of the QR code, a new page should appear containing the QR code and a Delete button user to delete outdated QR codes |
+
+&nbsp;
+
+##### 2.2 Requirements for the Employee
+
+&nbsp;
+
+| FID | Priority| Description |
+| --- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------|
+| 09 | High |  A tab called "Employee" should exist on the start page of the application where the user can click in order to be directed to the Employee view of the application |
+| 10 | High | A Register button should exist on the employee page that enables the employee to register their device via their MAC address with the Server device over a WiFi or Bluetooth connection |
+| 11 | High | A Scan button should exist on the employee page that enables the employee to scan and read the customer's QR codes |
+| 12 | High | The employee should be able to store customer data on their own device until the end of their shift, when they are then able to sync their locally stored customer data to ther server device |
+| 13 | High | A Sync button should exist on the employee page that enables the employee to transfer their locally stored customer data to the server device over a WiFi or Bluetooth connection |
+| 14 | High | Upon syncing the customer data with the server device, all customer data should be automatically deleted from the employee's device |
+
+&nbsp;
+
+##### 2.3 Requirements for the Server Device
+
+&nbsp;
+
+| FID | Priority| Description |
+| --- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------|
+| 15 | High | The server device should have WiFi and/or Bluetooth capabilities |
+| 16 | High | The server device should be able to generate a key pair for use in assymetric cryptography |
+| 17 | High | The server device should be able to host a SQL server for data storage |
+| 18 | High | After a succesful registration from a mobile device, the server device should automatically send their public key to the registered device |
+| 19 | High | The server device should be able to decrypt customer information and export these when requested |
+
+
