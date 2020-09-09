@@ -61,7 +61,7 @@ Central requirement of the app is to perform 'Kontakterfassung':
 
 > (8) Die Kontaktnachverfolgbarkeit ist sicherzustellen, sofern dies in dieser Verordnung ausdrücklich bestimmt wird (Kontakterfassung). Kontaktdaten (Name, Vorname, Anschrift, Telefonnummer) sind in diesem Fall von dem Betreiber einer Einrichtung oder Veranlasser einer Ansammlung oder sonstigen Zusammenkunft unter Einhaltung der datenschutzrechtlichen Bestimmungen zu erheben und für eine Frist von einem Monat aufzubewahren; nach Ablauf der Aufbewahrungsfrist sind die Daten unverzüglich zu löschen. Sich aus anderen Rechtsvorschriften ergebende Datenaufbewahrungspflichten bleiben unberührt. Das zuständige Gesundheitsamt kann, soweit dies zur Erfüllung seiner nach den Bestimmungen des Infektionsschutzgesetzes (IfSG) und dieser Verordnung obliegenden Aufgaben erforderlich ist, Auskunft über die Kontaktdaten verlangen; die Daten sind unverzüglich zu übermitteln. Eine Verarbeitung der Daten zu anderen Zwecken ist nicht zulässig.
 
-#### By RoleRole
+#### By Role
 
 | ID  | Role       | Domain      | Importance | Description                                                                                                                                                                                                      |
 | --- | ---------- | ----------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -95,22 +95,22 @@ Central requirement of the app is to perform 'Kontakterfassung':
 
 &nbsp;
 
-| ID  | Role     | Domain   | Importance | Description                                                                                                                                                    |
-| --- | -------- | -------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 01 | | Feature | High | The application should be able to run on all modern iOS and Android devices |
-| 02 | | Feature | Medium | All text should be available both in German and English |
-| 03 | | Feature | High | All customer data will be stored on a SQL Server installed on a Raspberry Pi (or similar device) situated in a secure location within the business premises |
+| ID  | Role | Domain  | Importance | Description                                                                                                                                                 |
+| --- | ---- | ------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01  |      | Feature | High       | The application should be able to run on all modern iOS and Android devices                                                                                 |
+| 02  |      | Feature | Medium     | All text should be available both in German and English                                                                                                     |
+| 03  |      | Feature | High       | All customer data will be stored on a SQL Server installed on a Raspberry Pi (or similar device) situated in a secure location within the business premises |
 
 ##### 1.2 Security Requirements
 
 &nbsp;
 
-| ID  | Role     | Domain   | Importance | Description                                                                                                                                                    |
-| --- | -------- | -------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 04 | | Security | High | All encryption should be done via RSA or similar assymetric encryption algorithm |
-| 05 | | Security | High | Once the customer data is transferred to the employee device, it should be immediately and automatically encrypted using the public key of the server device |
-| 06 | | Security | High | Customer data is only then decrypted with the server device's private key when a health authority has requested an export of customer data regarding a suspected case of CoVID-19 |
-| 07 | | Security | High | All customer data will be automatically deleted after a period of 30 days in accordance with government regulations |
+| ID  | Role | Domain   | Importance | Description                                                                                                                                                                       |
+| --- | ---- | -------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 04  |      | Security | High       | All encryption should be done via RSA or similar assymetric encryption algorithm                                                                                                  |
+| 05  |      | Security | High       | Once the customer data is transferred to the employee device, it should be immediately and automatically encrypted using the public key of the server device                      |
+| 06  |      | Security | High       | Customer data is only then decrypted with the server device's private key when a health authority has requested an export of customer data regarding a suspected case of CoVID-19 |
+| 07  |      | Security | High       | All customer data will be automatically deleted after a period of 30 days in accordance with government regulations                                                               |
 
 &nbsp;
 
@@ -119,16 +119,16 @@ Central requirement of the app is to perform 'Kontakterfassung':
 
 &nbsp;
 
-| ID  | Role     | Domain   | Importance | Description                                                                                                                                                    |
-| --- | -------- | -------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 01 | Customer | Feature | High | A tab called "Customer" should exist on the start page of the application where the user can click in order to be directed to the Customer view of the application |
-| 02 | Customer | Feature | High | A form field should exist on the Customer page to input the following customer information: last name, first name, address, telephone numer and optionally an email address |
-| 03 | Customer | Feature | High | A button should exist at the bottom of the form field where the customer can press to generate a QR code from the provided information |
-| 04 | Customer | Feature | High | Upon generation of the QR code referenced in FID 03, the application opens a new window with the generated QR code in which the QR code can then be scanned |
-| 05 | Customer | Feature | Medium | The customer should have the option to save the QR code for future use by clicking on a Save button on the generated page which contains the QR code, upon clicking the Save button a popup window should appear that contains a form field in which the customer specifies what the QR code should be called |
-| 06 | Customer | Feature | Medium | Saved QR codes should be accessed by a tab on the App Bar called QR Codes |
-| 07 | Customer | Feature | Medium | The QR codes page should contain a list view of all saved QR codes referenced by their saved name |
-| 08 | Customer | Feature | Medium | Upon clicking on the name of the QR code, a new page should appear containing the QR code and a Delete button user to delete outdated QR codes |
+| ID  | Role     | Domain  | Importance | Description                                                                                                                                                                                                                                                                                                   |
+| --- | -------- | ------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01  | Customer | Feature | High       | A tab called "Customer" should exist on the start page of the application where the user can click in order to be directed to the Customer view of the application                                                                                                                                            |
+| 02  | Customer | Feature | High       | A form field should exist on the Customer page to input the following customer information: last name, first name, address, telephone numer and optionally an email address                                                                                                                                   |
+| 03  | Customer | Feature | High       | A button should exist at the bottom of the form field where the customer can press to generate a QR code from the provided information                                                                                                                                                                        |
+| 04  | Customer | Feature | High       | Upon generation of the QR code referenced in FID 03, the application opens a new window with the generated QR code in which the QR code can then be scanned                                                                                                                                                   |
+| 05  | Customer | Feature | Medium     | The customer should have the option to save the QR code for future use by clicking on a Save button on the generated page which contains the QR code, upon clicking the Save button a popup window should appear that contains a form field in which the customer specifies what the QR code should be called |
+| 06  | Customer | Feature | Medium     | Saved QR codes should be accessed by a tab on the App Bar called QR Codes                                                                                                                                                                                                                                     |
+| 07  | Customer | Feature | Medium     | The QR codes page should contain a list view of all saved QR codes referenced by their saved name                                                                                                                                                                                                             |
+| 08  | Customer | Feature | Medium     | Upon clicking on the name of the QR code, a new page should appear containing the QR code and a Delete button user to delete outdated QR codes                                                                                                                                                                |
 
 &nbsp;
 
@@ -136,14 +136,14 @@ Central requirement of the app is to perform 'Kontakterfassung':
 
 &nbsp;
 
-| ID  | Role     | Domain   | Importance | Description                                                                                                                                                    |
-| --- | -------- | -------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 09 | User | Feature | High |  A tab called "Employee" should exist on the start page of the application where the user can click in order to be directed to the Employee view of the application |
-| 10 |  User | Feature | High | A Register button should exist on the employee page that enables the employee to register their device via their MAC address with the Server device over a WiFi or Bluetooth connection |
-| 11 |  User | Feature | High | A Scan button should exist on the employee page that enables the employee to scan and read the customer's QR codes |
-| 12 |  User | Feature | High | The employee should be able to store customer data on their own device until the end of their shift, when they are then able to sync their locally stored customer data to ther server device |
-| 13 |  User | Feature | High | A Sync button should exist on the employee page that enables the employee to transfer their locally stored customer data to the server device over a WiFi or Bluetooth connection |
-| 14 |  User | Feature | High | Upon syncing the customer data with the server device, all customer data should be automatically deleted from the employee's device |
+| ID  | Role | Domain  | Importance | Description                                                                                                                                                                                   |
+| --- | ---- | ------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 09  | User | Feature | High       | A tab called "Employee" should exist on the start page of the application where the user can click in order to be directed to the Employee view of the application                            |
+| 10  | User | Feature | High       | A Register button should exist on the employee page that enables the employee to register their device via their MAC address with the Server device over a WiFi or Bluetooth connection       |
+| 11  | User | Feature | High       | A Scan button should exist on the employee page that enables the employee to scan and read the customer's QR codes                                                                            |
+| 12  | User | Feature | High       | The employee should be able to store customer data on their own device until the end of their shift, when they are then able to sync their locally stored customer data to ther server device |
+| 13  | User | Feature | High       | A Sync button should exist on the employee page that enables the employee to transfer their locally stored customer data to the server device over a WiFi or Bluetooth connection             |
+| 14  | User | Feature | High       | Upon syncing the customer data with the server device, all customer data should be automatically deleted from the employee's device                                                           |
 
 &nbsp;
 
@@ -151,12 +151,12 @@ Central requirement of the app is to perform 'Kontakterfassung':
 
 &nbsp;
 
-| ID  | Role     | Domain   | Importance | Description                                                                                                                                                    |
-| --- | -------- | -------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 15 | | Feature | High | The server device should have WiFi and/or Bluetooth capabilities |
-| 16 | | Security | High | The server device should be able to generate a key pair for use in assymetric cryptography |
-| 17 | | Feature |  High | The server device should be able to host a SQL server for data storage |
-| 18 | | Security | High | After a succesful registration from a mobile device, the server device should automatically send their public key to the registered device |
-| 19 | | Security | High | The server device should be able to decrypt customer information and export these when requested |
+| ID  | Role | Domain   | Importance | Description                                                                                                                                |
+| --- | ---- | -------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 15  |      | Feature  | High       | The server device should have WiFi and/or Bluetooth capabilities                                                                           |
+| 16  |      | Security | High       | The server device should be able to generate a key pair for use in assymetric cryptography                                                 |
+| 17  |      | Feature  | High       | The server device should be able to host a SQL server for data storage                                                                     |
+| 18  |      | Security | High       | After a succesful registration from a mobile device, the server device should automatically send their public key to the registered device |
+| 19  |      | Security | High       | The server device should be able to decrypt customer information and export these when requested                                           |
 
 
